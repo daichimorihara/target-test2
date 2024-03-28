@@ -1,0 +1,12 @@
+name: Pull request closing workflow
+
+on:
+  pull_request_target:
+
+jobs:
+  target_test:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: echo 
+        run: |
+         echo "main branch"
